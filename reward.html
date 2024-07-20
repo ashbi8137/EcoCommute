@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Rewards</title>
+    <link rel="stylesheet" href="reward.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Earn Rewards</h1>
+        <div class="points-dashboard">
+            <h3>Your Points: <span id="points-balance">120</span></h3>
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+            <p id="progress-text">60% to next reward</p>
+        </div>
+
+        <div class="trip-log">
+            <h2>Log Your Eco-Friendly Trip</h2>
+            <form id="log-trip-form">
+                <label for="trip-type">Trip Type:</label>
+                <select id="trip-type" name="trip-type">
+                    <option value="bike">Bike</option>
+                    <option value="walk">Walk</option>
+                    <option value="carpool">Carpool</option>
+                    <option value="public-transport">Public Transport</option>
+                </select>
+                <label for="trip-date">Date:</label>
+                <input type="date" id="trip-date" name="trip-date" required>
+                <label for="trip-proof">Upload Proof:</label>
+                <input type="file" id="trip-proof" name="trip-proof" accept="image/*">
+                <button type="submit">Log Trip</button>
+            </form>
+        </div>
+
+        <div class="rewards-catalog">
+            <h2>Available Rewards</h2>
+            <ul>
+                <li>
+                    Gift Card - 100 points 
+                    <button class="redeem-button" onclick="redeemReward(100)">Redeem</button>
+                </li>
+                <li>
+                    Discount Coupon - 50 points 
+                    <button class="redeem-button" onclick="redeemReward(50)">Redeem</button>
+                </li>
+                <li>
+                    Eco-friendly Tote Bag - 200 points 
+                    <button class="redeem-button" onclick="redeemReward(200)">Redeem</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="user-profile">
+            <h2>Your Profile</h2>
+            <div id="trip-history">
+                <h3>Trip History</h3>
+                <ul id="trip-list">
+                    <!-- Trip history items will be appended here -->
+                </ul>
+            </div>
+            <div id="badges">
+                <h3>Your Badges</h3>
+                <ul>
+                    <li>Eco Warrior</li>
+                    <li>Green Commuter</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="reward.js"></script>
+</body>
+</html>

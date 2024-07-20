@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7e5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2f855a;
+}
+
+.points-dashboard, .trip-log, .rewards-catalog, .user-profile {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #c6e9c6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #38a169;
+}
+
+#log-trip-form label, #log-trip-form select, #log-trip-form input, #log-trip-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#log-trip-form input[type="file"] {
+    padding: 5px;
+}
+
+button {
+    background-color: #38a169;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f855a;
+}
+
+.redeem-button {
+    float: right;
+    margin-left: 10px;
+}
+
+.rewards-catalog ul, .user-profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rewards-catalog li, .user-profile li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trip-history ul {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#trip-history li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+#trip-history li:last-child {
+    border-bottom: none;
+}
