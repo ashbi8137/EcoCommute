@@ -1,2 +1,1 @@
-# EcoCommute
-Green Revolution in Urban Transit!
+Too many people in cities use cars for transportation, which causes pollution and traffic jams. While better options like walking, biking, and public transit exist, people often don't choose them.we are try to solve these problems by creating an app that rewards people for choosing green transportation, helps them understand their impact, and connects them with others making similar choices.
